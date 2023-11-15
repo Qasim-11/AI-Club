@@ -2,11 +2,9 @@ import openai
 import configparser
 import requests
 import os
-from dotenv import load_dotenv
 from openai import OpenAI
 import streamlit as st
-load_dotenv()
-OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
+OPENAI_API_KEY = st.secrets["OPENAI_API_KEY"]
 openai.api_key = OPENAI_API_KEY
 client = OpenAI(api_key = OPENAI_API_KEY)
 config = configparser.ConfigParser()
