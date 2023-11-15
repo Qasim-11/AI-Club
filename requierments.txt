@@ -1,7 +1,1 @@
-streamlit
-openai
-configparser
-requests
-os
-from dotenv 
-streamlit as st
+openai==1.2.4
